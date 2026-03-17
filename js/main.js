@@ -61,7 +61,7 @@
 
     /* --- Discuss block --- */
     setAttr('#discuss-cta', 'href', prefixHref(SITE.cta.request.href));
-    document.querySelectorAll('.discuss__avatar').forEach(function (img) {
+    document.querySelectorAll('.discuss img').forEach(function (img) {
       var src = img.getAttribute('src');
       if (src && src.startsWith('/')) img.setAttribute('src', prefixHref(src));
     });
