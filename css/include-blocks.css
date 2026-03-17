@@ -1,0 +1,156 @@
+/* ============================================================
+   Include Blocks — стили для переиспользуемых блоков
+   clamp: 390px (min) → 1260px (max)
+   ============================================================ */
+
+/* --- Обсудить задачу --- */
+.discuss-block {
+  background-color: #fff;
+  padding: clamp(40px, 3.4vw + 26px, 70px) 0;
+}
+
+.discuss {
+  background: var(--gradient-lime-cyan);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3.7vw + 9px, 56px) clamp(24px, 4.6vw + 6px, 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(24px, 1.8vw + 17px, 40px);
+  position: relative;
+}
+
+.discuss__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 0.5vw + 10px, 16px);
+  order: 2;
+}
+
+.discuss__content .h2 {
+  color: var(--text-deep);
+  font-size: clamp(1.5rem, 1.7vw + 1rem, 2.25rem);
+}
+
+.discuss__text {
+  font-size: clamp(0.875rem, 0.2vw + 0.82rem, 1rem);
+  line-height: 1.6;
+  color: var(--text-deep);
+  opacity: 0.8;
+  max-width: 480px;
+}
+
+.discuss__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 0.5vw + 10px, 16px);
+  margin-top: 8px;
+}
+
+.discuss__hint {
+  font-size: clamp(0.7rem, 0.1vw + 0.67rem, 0.8rem);
+  line-height: 1.4;
+  color: var(--text-deep);
+  opacity: 0.5;
+  max-width: 480px;
+}
+
+/* Photo */
+.discuss__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  order: 1;
+  position: relative;
+}
+
+.discuss__avatar-ring {
+  width: clamp(160px, 4.6vw + 142px, 200px);
+  height: clamp(160px, 4.6vw + 142px, 200px);
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.discuss__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.discuss__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-deep);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4px 12px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: clamp(-10px, 1.1vw - 14px, -20px);
+}
+
+.discuss__status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  display: inline-block;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.discuss__name {
+  font-size: clamp(0.9rem, 0.2vw + 0.84rem, 1.05rem);
+  font-weight: 700;
+  color: var(--text-deep);
+  margin-top: 4px;
+}
+
+.discuss__role {
+  font-size: clamp(0.75rem, 0.1vw + 0.72rem, 0.85rem);
+  color: var(--text-deep);
+  opacity: 0.6;
+}
+
+/* --- Tablet (768px+) — row layout, кнопки стовпцем --- */
+@media (min-width: 768px) {
+  .discuss {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .discuss__content {
+    align-items: flex-start;
+    order: 1;
+    flex: 1;
+  }
+
+  .discuss__photo {
+    order: 2;
+    flex-shrink: 0;
+  }
+}
+
+/* --- Desktop (981px+) — кнопки в ряд --- */
+@media (min-width: 981px) {
+  .discuss__actions {
+    flex-direction: row;
+  }
+}

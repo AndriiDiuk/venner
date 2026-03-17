@@ -59,6 +59,13 @@
     buildMessengers('#cta-messengers');
     buildWorkFormatFAQ();
 
+    /* --- Discuss block --- */
+    setAttr('#discuss-cta', 'href', prefixHref(SITE.cta.request.href));
+    document.querySelectorAll('.discuss__avatar').forEach(function (img) {
+      var src = img.getAttribute('src');
+      if (src && src.startsWith('/')) img.setAttribute('src', prefixHref(src));
+    });
+
     /* --- CTA Contact quick nav --- */
     document.querySelectorAll('.cta-contact__quick-nav a').forEach(function (a) {
       var href = a.getAttribute('href');

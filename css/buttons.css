@@ -1,0 +1,76 @@
+
+/* --- Accent (красная) --- */
+/* clamp: 390px → 1260px */
+.btn.accent {
+  background: var(--btn-accent);
+  color: #fff;
+  border-color: var(--btn-accent);
+  border-radius: clamp(12px, 0.5vw + 10px, 16px);
+  padding: clamp(20px, 1.4vw + 15px, 32px) clamp(35px, 0.6vw + 33px, 40px);
+  width: clamp(216px, 6.2vw + 192px, 270px);
+  height: clamp(50px, 2.1vw + 42px, 68px);
+  font-size: clamp(0.9rem, 0.1vw + 0.87rem, 1rem);
+  font-weight: 600;
+}
+
+.btn.accent:hover {
+  background: var(--btn-accent-hover);
+  border-color: var(--btn-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(229, 86, 72, 0.3);
+}
+
+.btn.accent:active {
+  transform: translateY(0);
+}
+
+/* --- Telegram (большая) --- */
+/* clamp: 390px → 1260px */
+.btn.telegram {
+  background: var(--btn-telegram-bg);
+  color: #fff;
+  border-color: transparent;
+  border-radius: clamp(12px, 0.5vw + 10px, 16px);
+  padding: clamp(20px, 1.4vw + 15px, 32px) clamp(35px, 0.6vw + 33px, 40px);
+  width: clamp(216px, 6.2vw + 192px, 270px);
+  height: clamp(50px, 2.1vw + 42px, 68px);
+  font-size: clamp(0.9rem, 0.1vw + 0.87rem, 1rem);
+  font-weight: 600;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn.telegram:hover {
+  background: var(--btn-telegram-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(89, 177, 255, 0.3);
+}
+
+.btn.telegram:active {
+  transform: translateY(0);
+}
+
+/* --- Link (кнопка-ссылка, pill) --- */
+/* clamp: 390px → 1260px */
+.btn.link {
+  background: var(--btn-link-bg);
+  color: var(--text);
+  border: 1px solid var(--btn-link-border);
+  border-radius: 50px;
+  padding: clamp(20px, 1.4vw + 15px, 32px) clamp(35px, 0.6vw + 33px, 40px);
+  width: clamp(89px, 2.9vw + 78px, 114px);
+  height: clamp(25px, 0.8vw + 22px, 32px);
+  font-size: clamp(0.75rem, 0.1vw + 0.72rem, 0.85rem);
+  font-weight: 500;
+}
+
+.btn.link:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+  transform: translateY(-1px);
+}
+
+.btn.link:active {
+  transform: translateY(0);
+}

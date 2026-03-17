@@ -1,0 +1,10 @@
+
+/* --- Glass (стеклянный блок с блюром) --- */
+.wrapper.glass {
+  background: var(--wrapper-glass-bg);
+  backdrop-filter: blur(var(--wrapper-glass-blur));
+  -webkit-backdrop-filter: blur(var(--wrapper-glass-blur));
+  box-shadow: var(--wrapper-glass-shadow);
+  border-radius: var(--radius);
+  padding: var(--pad);
+}
