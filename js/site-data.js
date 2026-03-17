@@ -5,8 +5,10 @@
 
 const SITE = {
 
-  /* ── Базовый путь (для GitHub Pages: '/venner/', для продакшена: '/') ── */
-  basePath: '/venner/',
+  /* ── Базовый путь (авто: /venner/ на GitHub Pages, / — локально и на продакшене) ── */
+  basePath: location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+    ? '/'
+    : '/venner/',
 
   /* ── Компания ─────────────────────────────────────────── */
   company: {

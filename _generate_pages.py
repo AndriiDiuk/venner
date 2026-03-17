@@ -204,7 +204,7 @@ def make_breadcrumbs(parent_name, parent_path, bc_name):
     lines = [
         '<nav class="breadcrumb" aria-label="Навигация">',
         '      <ol>',
-        '        <li><a href="/">Главная</a></li>',
+        '        <li><a href="/venner/">Главная</a></li>',
     ]
     if parent_name and parent_path:
         lines.append(f'        <li><a href="{parent_path}">{parent_name}</a></li>')

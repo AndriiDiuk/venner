@@ -29,8 +29,9 @@
     if (typeof SITE === 'undefined') return;
 
     /* --- Header --- */
+    setAttr('.logo', 'href', SITE.basePath || '/');
     setText('#header-cta', SITE.cta.calc.label);
-    setAttr('#header-cta', 'href', SITE.cta.calc.href);
+    setAttr('#header-cta', 'href', prefixHref(SITE.cta.calc.href));
     setText('#header-phone', SITE.contacts.phone);
     setAttr('#header-phone', 'href', SITE.contacts.phoneHref);
 
@@ -43,24 +44,36 @@
     setText('#footer-tagline', SITE.tagline || SITE.company.tagline);
     setHTML('#copyright', SITE.copyright.replace('{year}', year));
     setText('#footer-request', SITE.cta.request.label);
-    setAttr('#footer-request', 'href', SITE.cta.request.href);
+    setAttr('#footer-request', 'href', prefixHref(SITE.cta.request.href));
     setText('#footer-contact', 'Связаться');
-    setAttr('#footer-contact', 'href', '/kontakty/');
+    setAttr('#footer-contact', 'href', prefixHref('/kontakty/'));
     buildLegalLinks();
     buildFooterMessengers();
     buildFooterExtraNav();
 
     /* --- CTA Contact block --- */
-    setAttr('#cta-calc', 'href', SITE.cta.calc.href);
+    setAttr('#cta-calc', 'href', prefixHref(SITE.cta.calc.href));
     setText('#cta-calc', SITE.cta.calc.label);
     setText('#cta-call', 'Позвонить ' + SITE.contacts.phone);
     setAttr('#cta-call', 'href', SITE.contacts.phoneHref);
     buildMessengers('#cta-messengers');
     buildWorkFormatFAQ();
 
+    /* --- CTA Contact quick nav --- */
+    document.querySelectorAll('.cta-contact__quick-nav a').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href) a.setAttribute('href', prefixHref(href));
+    });
+
+    /* --- Breadcrumbs --- */
+    document.querySelectorAll('.breadcrumb a[href="/"]').forEach(function (a) {
+      a.setAttribute('href', SITE.basePath || '/');
+    });
+
     /* --- Forms consent --- */
+    var consent = SITE.consentText.replace(/href="\//g, 'href="' + (SITE.basePath || '/'));
     document.querySelectorAll('.consent-text').forEach(function (el) {
-      el.innerHTML = SITE.consentText;
+      el.innerHTML = consent;
     });
   }
 
@@ -72,11 +85,11 @@
     SITE.menu.forEach(function (item) {
       var hasSub = item.children && item.children.length;
       html += '<li class="nav-item' + (hasSub ? ' has-dropdown' : '') + '">';
-      html += '<a href="' + item.href + '">' + item.label + '</a>';
+      html += '<a href="' + prefixHref(item.href) + '">' + item.label + '</a>';
       if (hasSub) {
         html += '<ul class="dropdown">';
         item.children.forEach(function (sub) {
-          html += '<li><a href="' + sub.href + '">' + sub.label + '</a></li>';
+          html += '<li><a href="' + prefixHref(sub.href) + '">' + sub.label + '</a></li>';
         });
         html += '</ul>';
       }
@@ -90,7 +103,7 @@
     if (!nav) return;
     var html = '';
     SITE.menuExtra.forEach(function (item) {
-      html += '<li><a href="' + item.href + '">' + item.label + '</a></li>';
+      html += '<li><a href="' + prefixHref(item.href) + '">' + item.label + '</a></li>';
     });
     nav.innerHTML = html;
   }
@@ -100,7 +113,7 @@
     if (!el) return;
     var html = '';
     SITE.legal.forEach(function (l) {
-      html += '<li><a href="' + l.href + '">' + l.label + '</a></li>';
+      html += '<li><a href="' + prefixHref(l.href) + '">' + l.label + '</a></li>';
     });
     el.innerHTML = html;
   }
@@ -116,7 +129,7 @@
     if (!nav) return;
     var html = '';
     SITE.menuExtra.forEach(function (item) {
-      html += '<li><a href="' + item.href + '">' + item.label + '</a></li>';
+      html += '<li><a href="' + prefixHref(item.href) + '">' + item.label + '</a></li>';
     });
     nav.innerHTML = html;
   }
@@ -371,6 +384,14 @@
   }
 
   /* --- helpers --- */
+  function prefixHref(href) {
+    if (typeof SITE === 'undefined' || !href) return href;
+    var base = SITE.basePath || '/';
+    if (href.startsWith('/') && !href.startsWith('//')) {
+      return base + href.slice(1);
+    }
+    return href;
+  }
   function setText(sel, text) {
     var el = document.querySelector(sel);
     if (el) el.textContent = text || '';
