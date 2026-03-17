@@ -5,6 +5,9 @@
 
 const SITE = {
 
+  /* ── Базовый путь (для GitHub Pages: '/venner/', для продакшена: '/') ── */
+  basePath: '/venner/',
+
   /* ── Компания ─────────────────────────────────────────── */
   company: {
     name:      'Venner Digital',
