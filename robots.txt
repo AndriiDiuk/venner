@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /errors/
+Disallow: /include/
+
+# Sitemap
+Sitemap: https://venner.ru/sitemap.xml
+
+# Host
+Host: https://venner.ru

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Главная -->
+  <url><loc>https://venner.ru/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Создание сайтов -->
+  <url><loc>https://venner.ru/sozdanie-saytov/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/lending-page/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/internet-magazin/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/kviz-sayt/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/sayt-na-wordpress/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/sayt-na-1c-bitrix/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/sayt-na-opencart/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/sayt-na-html/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/prototip-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/veb-dizayn-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/verstka-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/redizayn-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/arenda-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/sozdanie-saytov/tehnicheskij-audit-sayta/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Яндекс.Директ -->
+  <url><loc>https://venner.ru/yandex-direct/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://venner.ru/yandex-direct/vedenie/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/yandex-direct/audit/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/yandex-direct/arenda/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- SEO -->
+  <url><loc>https://venner.ru/seo/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://venner.ru/seo/semanticheskoe-yadro/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/seo/prodvizhenie-sayta/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/seo/optimizaciya-sayta/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/seo/audit-sayta/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/seo/serm-reputaciya/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/seo/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/seo/kopirajting/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/seo/topvisor/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- CRM и интеграции -->
+  <url><loc>https://venner.ru/crm-integracii/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/amocrm/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/bitrix24/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/wazzup/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/radist-online/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/chatapp/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/crm-integracii/moi-zvonki/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Avito -->
+  <url><loc>https://venner.ru/avito/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/avito/oformlenie-i-optimizaciya/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/avito/prodvizhenie-i-analitika/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Лидогенерация -->
+  <url><loc>https://venner.ru/lidogeneraciya/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/lidogeneraciya/marquiz/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/lidogeneraciya/myreviews/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/lidogeneraciya/servisy-reputacii/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Дополнительные страницы -->
+  <url><loc>https://venner.ru/zakaz-uslugi/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://venner.ru/o-kompanii/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/ceny/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/otzyvy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/portfolio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/hosting/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://venner.ru/kontakty/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://venner.ru/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Юридические страницы -->
+  <url><loc>https://venner.ru/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://venner.ru/consent/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://venner.ru/oferta/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://venner.ru/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://venner.ru/disclaimer/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://venner.ru/cookies/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>

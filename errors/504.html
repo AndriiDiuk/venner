@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>504 — Время ожидания истекло | Venner Digital</title>
+  <meta name="description" content="Сервер не дождался ответа. Попробуйте позже.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #070b12, #0a1221);
+      color: #e9eefc;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: -40%; left: -20%;
+      width: 60%; height: 80%;
+      background: radial-gradient(circle, rgba(103,232,249,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: -30%; right: -10%;
+      width: 50%; height: 70%;
+      background: radial-gradient(circle, rgba(103,232,249,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      max-width: 600px;
+    }
+    section { margin-bottom: 3rem; }
+    h1 {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      color: #67e8f9;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #e9eefc;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: rgba(233,238,252,0.7);
+      margin-bottom: 2rem;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: #67e8f9;
+      color: #070b12;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    a.btn:hover { background: #a5f3fc; transform: translateY(-1px); }
+    a.btn:active { transform: translateY(0); }
+    footer p {
+      font-size: 0.85rem;
+      color: rgba(233,238,252,0.35);
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>504</h1>
+      <h2>Время ожидания истекло</h2>
+      <p>Сервер не дождался ответа. Попробуйте позже.</p>
+      <a href="/" class="btn">Вернуться на главную</a>
+    </section>
+    <footer>
+      <p>Venner Digital — веб-студия и маркетинг</p>
+    </footer>
+  </main>
+</body>
+</html>
