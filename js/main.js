@@ -66,8 +66,9 @@
     });
 
     /* --- Breadcrumbs --- */
-    document.querySelectorAll('.breadcrumb a[href="/"]').forEach(function (a) {
-      a.setAttribute('href', SITE.basePath || '/');
+    document.querySelectorAll('.breadcrumb a').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href) a.setAttribute('href', prefixHref(href));
     });
 
     /* --- Forms consent --- */
