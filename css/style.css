@@ -806,6 +806,16 @@ details.faq-item[open] .chev {
   transform: translateX(0);
 }
 
+.nav-list,
+.nav-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .nav-item {
   position: relative;
 }
@@ -1202,6 +1212,11 @@ summary {
     align-items: center;
     gap: 2px;
     overflow: visible;
+  }
+
+  .nav-list,
+  .nav-extra {
+    flex-direction: row;
   }
 
   .nav-item > a,
